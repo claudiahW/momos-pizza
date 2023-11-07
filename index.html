@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+ <title> Popoz Pizzaria </title> 
+</head>
+
+<body> 
+    <div class="container">
+    <div class="container-fluid  p-5 my-5 bg-dark text-white" >  
+            
+                <h1>WELCOME
+                TO POPOZ-PIZZARIA!</h1>
+                <h5>WE MAKE YOUR TUMMY SAY YUMMY YUMMY!</h5>
+                
+    </div>    
+        <div class="container-fluid"> 
+        <div class="order">
+            <div class="placeOrder">
+                <form action="/action_page.php">
+                     <div class="card-body w-auto">
+                        <p>Please select your preferences from our wide range of toppings and crusts!</p>
+                        <div class="form-group">
+                            <div id="size">
+                                <label for="pizzaSize" class="form-label">Select size (select one):</label>
+                                <select class="browser-default form-select" id="pizzaSize" name="pizzaSize">
+                                    <option value="choose"></option>
+                                    <option label="Large - ksh 1500" value="1500"></option>
+                                    <option label="Medium -ksh 1000" value="1000"></option>
+                                    <option label="Small -ksh 800" value="800"></option>
+                                </select>
+                            </div>
+                        </div>            
+                      <div class="form-group">
+                        <div id="crust">
+                            <label for="pizzaCrust" class="form-label">Select pizza crust (select one):</label>
+                            <select class=" browser-default form-select" id="pizzaCrust" name="pizzaCrust">
+                                <option value="choose"></option>
+                                <option label=" Thin  -ksh 300" value="300"></option>
+                                <option label="Hand-Tossed  -ksh 200" value="200"></option>
+                                <option label="Gluten-free  -ksh 250" value="250"></option>
+                                <option label="Stuffed  -ksh 150" value="150"></option>
+                               
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div id="types">
+                            <label for="pizzaType" class="form-label">Select pizza flavour(select one):</label>
+                            <select class="browser-default form-select" id="pizzaType" name="pizzaType">
+                                <option value="choose"></option>
+                                <option label="Boerwors Pizza"></option>
+                                <option label="Pepperoni Pizza"></option>
+                                <option label="Hawaaian Pizza"></option>
+                                <option label="Chicken tikka Pizza"></option>
+                                <option label="Sweet corn Pizza"></option>
+                                <option label="Chicken Pizza"></option>
+                            </select>
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <div id="toppings">
+                            <label for="pizzaTopping" class="form-label">Select preferred Toppings(Pick one):</label>
+                            <select class="browser-default form-select" id="pizzaTopping" name="pizzaTopping">
+                                <option value="choose"></option>
+                                <option label="Pepperoni -ksh 120" value="120"></option>
+                                <option label="Bacon -ksh 120" value="120"></option>
+                                <option label="Pineapple -ksh 130" value="130"></option>
+                                <option label="Chicken -ksh 150" value="150"></option>
+                                <option label="Veggies-ksh 120" value="120"></option>
+                                <option label="Turkey -ksh 150" value="150"></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div id="number">
+                            <label for="quantity" class="form-label">Quantity:</label>
+                            <input class="form-control" type="number" name="pizza" id="quantity" placeholder="0"
+                                max="" min="0">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="delivery"> <p> How would you like your order?</p>
+                <div class="radio">
+                    <label>
+                      <input type="radio" name="deliver" value="sit-in" checked>
+                      Sit-In
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="deliver" value="to-go">
+                     To-Go
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="deliver" value="delivered">
+                     Delivered
+                    </label>
+                  </div>
+                </div>
+                <div class="button">
+                <button class="btn btn-dark mx-auto d-block submit" onclick="totalAmount()" type="submit" id="submit2"><strong>Confirm order</strong>
+                </div>
+                
+
+                <div class= "thankyou">
+                    <p>Thank you for your purchase!We look forward to hearing from you soon!</p>
+                </div>
+                <div class= "contact">
+                    <p>You may reach us on;
+                        Phone; 0721345675
+                        email;popozpizzeria@gmail.com
+                    </p>
+                                        
+                </div>
+                <div class="copyright" >
+                    POPOZ PIZZARIA 2021
+
+                </div>
+            </form>
+
+            </div>    
+        </div>
+  </div>
+</div>
+</body>
+<script src="scripts.js "></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+
+</html>
