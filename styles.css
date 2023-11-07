@@ -1,0 +1,58 @@
+.intro {
+    text-align: center ; 
+    font-style: italic ; 
+    font-style: oblique; 
+    margin-left: 250px;
+    background-color: turquoise;
+    margin-right: 200px;
+    opacity: 60%; 
+    color: black ;
+
+    
+    
+}
+.thankyou { text-align: center; font-style: normal; margin-left: 80px; font-size:16px ;
+
+}
+
+.order {
+    text-align: left; 
+}
+.card-body{
+    background-color: rgb(22, 126, 129); color: black;
+     margin-left: 100px; margin-right: 150px;
+    margin-bottom: 50px;
+}
+body{ 
+  background-image: url(./body.jpg);
+    color: black; background-color: rgb(51, 155, 48);
+}
+.jumbotron{background-color:rgb(39, 30, 30);
+    font-style: italic;
+    color: rgb(46, 43, 43);
+
+   
+}
+.welcome, body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.delivery{
+    font-size: 25px;
+    background-color: turquoise;
+    margin-left: 150px ;
+    margin-right:150px;
+    opacity: 80%;
+
+}
+.contact{
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    color:black;
+}
+.copyright{
+    text-align: center;
+}
