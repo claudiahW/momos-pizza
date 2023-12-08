@@ -1,8 +1,8 @@
-# POPOZ PIZZARIA 
-#### Popoz Pizza! Makes your tummy say yummy yummy!. 2021
+# MOMOS PIZZA
+#### Momos Pizza! Makes your tummy say yummy yummy!. 2023
 #### By Claudiah Wanjiru
 ## Description
-This page allows you to order from the website and have pizza delivered 
+This page allows you to order from the pizza restaurant website and have pizza delivered, pick it up yourself or have a dinne in option 
 ## Setup/Installation Requirements
 Works especially well on google chrome.
 ## Known Bugs
@@ -15,4 +15,4 @@ BOOTSTRAP
 ## Support and contact details
 Kindly reach me on murungiclaud@gmail.com for any enquiries.
 ### License
-MIT Copyright (c) 2021 Claudiah Wanjiru.
+MIT Copyright (c) 2023 Claudiah Wanjiru.

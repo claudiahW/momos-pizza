@@ -29,3 +29,58 @@ function getSize() {
       "" + ""+ ".Thank you for shopping with us!See you soon.")
   };
   
+  //local reviews data
+
+  const reviews = [
+    {
+      id: 1,
+      name: "Susan Smith",
+      job:"web developer",
+      img:"/woman.png" ,
+      text: "lorem20",
+    },
+
+    {
+      id: 2,
+      name: "Jane Doe",
+      job:"web developer",
+      img:"/man.png" ,
+      text: "lorem20",
+    },
+
+    {
+      id: 3,
+      name: "Mike Davis",
+      job:"web developer",
+      img:"/profile.png" ,
+      text: "lorem20",
+    },
+
+  ];
+
+  //select items 
+  const img = document.getElementById("woman.png");
+  const author = document.getElementById("author");
+  const job = document.getElementById("job");
+  const info = document.getElementById("info");
+
+  const prevBtn = document.querySelector(".prev-btn");
+  const nextBtn = document.querySelector(".prev-btn");
+  const randomBtn = document.querySelector(".prev-btn");
+
+  //set starting item
+  let currentItem = 0;
+
+  //load initial item
+  window.addEventListener("DOMContentLoaded", function() {
+
+   const item = reviews[currentItem];
+   img.src = item.img;
+   author.textContent = item.name;
+   job.textContent = item.job;
+   info.textContent = item.text;
+
+
+  });
+  
+
